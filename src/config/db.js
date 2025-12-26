@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const mongoURI = "mongodb://root:JXSDCHCizD0wAWuBCEhc6CM9@172.21.65.11:27017/MongoDBDatabase?authSource=admin";
 const connectDB = async () => {
     try {
         await mongoose.connect(process.env.MONGO_URI, {
